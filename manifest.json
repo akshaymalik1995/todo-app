@@ -1,0 +1,32 @@
+{
+    "theme_color": "#f69435",
+    "background_color": "#ffffff",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/todo-app/",
+    "app_name": "Todo",
+    "short_name": "Todo",
+    "description": "An app that helps you complete tasks",
+    "icons": [
+        {
+            "src": "/todo-app/icons/android-launchericon-192-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/todo-app/icons/android-launchericon-96-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/todo-app/icons/android-launchericon-144-144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/todo-app/icons/android-launchericon-512-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
