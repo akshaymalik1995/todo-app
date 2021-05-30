@@ -9,6 +9,17 @@ else {
     tasks = []
 }
 
+resetBtn = document.querySelector('#reset')
+
+function removeResetButton(tasks) {
+    if (tasks.length == 0) {
+        resetBtn.classList.add("d-none")
+    }
+    
+    else {
+        resetBtn.classList.remove("d-none")
+    }
+}
 
 function addTodos(tasks) {
     todos.innerHTML = ""
@@ -22,7 +33,7 @@ function addTodos(tasks) {
        
         })
     }
-    
+    removeResetButton(tasks)
     localStorage.setItem("todos" , JSON.stringify(tasks))
 }
 
@@ -52,11 +63,16 @@ todos.addEventListener("click", (event) => {
     
 })
 
-resetBtn = document.querySelector('#reset')
+
+
+
+
+
 
 reset.addEventListener("click", () => {
     localStorage.removeItem("todos")
     tasks = []
+    removeResetButton(tasks)
     addTodos(tasks)
 })
 
